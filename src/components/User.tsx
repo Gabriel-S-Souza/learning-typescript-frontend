@@ -7,7 +7,7 @@ interface IUser {
 }
 
 // Interface para tipar a React.FC (componente funcional). Isso foi feito para o elemento
-// contionuar tendo acesso à propriedade children, pois se o parâmetro do componente User
+// continuar tendo acesso à propriedade children, pois se o parâmetro do componente User
 // fosse tipado como IUser diretamente não teria acesso a propriedade children já que ela não
 // tá na interface IUser. Outra forma que ACHO que daria para resolver isso seria colocar
 // a propriedade children?: opicional no IUser
