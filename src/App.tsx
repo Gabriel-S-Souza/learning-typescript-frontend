@@ -11,7 +11,7 @@ interface IUser {
 function App() {
 	const [users, setUsers] = useState<IUser[]>([])
 
-	// Vou usar a api dentro de um useEffect para 
+	// Usando a api dentro de um useEffect para 
 	// carregar alguns dados assim dque o componente é montado em tela
 	useEffect(() => {
 		api.get<IUser[]>('/users').then(response => {
