@@ -12,7 +12,7 @@ function App() {
 	const [users, setUsers] = useState<IUser[]>([])
 
 	// Usando a api dentro de um useEffect para 
-	// carregar alguns dados assim dque o componente é montado em tela
+	// carregar alguns dados assim que o componente é montado em tela
 	useEffect(() => {
 		api.get<IUser[]>('/users').then(response => {
 			setUsers(response.data)
